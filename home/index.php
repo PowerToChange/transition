@@ -28,9 +28,9 @@ Are you going into your first year of University or College this fall? We would 
 		<table>
 			<tr><td>
 				<a href="http://www.eventbrite.ca/event/5645142774/eorg"><div><table><tr><td>Campus Tour<br />Dalhousie University<br />April 11</td></tr></table></div></a>
-				<a href="http://www.eventbrite.ca/event/5644057528/eorg"><div><table><tr><td>Campus Tour<br />Mount Royal University<br />March 28</td></tr></table></div></a>
-				<a href="http://www.eventbrite.ca/event/5646783682/eorg"><div><table><tr><td>Campus Tour<br />University of Saskatchewan<br />April 3</td></tr></table></div></a>
-				<a href="http://www.eventbrite.ca/event/5759593098/eorg"><div><table><tr><td>Campus Tour<br />University of Winnipeg<br />March 27</td></tr></table></div></a>
+				<a href="http://www.eventbrite.ca/event/6139115259/eorg"><div><table><tr><td>Campus Tour<br />Langara College<br />May 4</td></tr></table></div></a>
+				<a href="http://www.eventbrite.ca/event/6138395105/eorg"><div><table><tr><td>Campus Tour<br />Simon Fraser University<br />Burnaby<br />April 20</td></tr></table></div></a>
+				<a href="http://www.eventbrite.ca/event/6138906635/eorg"><div><table><tr><td>Campus Tour<br />University of British Columbia<br />Vancouver<br />April 13</td></tr></table></div></a>
 				<a href="http://transitionmontreal.eventbrite.ca/"><div><table><tr><td>Transition Day<br />Montreal<br />April 27</td></tr></table></div></a>
 			</td></tr>
 		</table>
