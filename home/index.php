@@ -25,6 +25,8 @@ Are you going into your first year of University or College this fall? We would 
 	<div class="g3 center">
 		<h2><!--We will announce campus tours very soon, please come back later-->Sign up by clicking on the campus tour you want to attend.</h2>
 		<div class="miniwrapper">
+			No events scheduled right now.
+			<!--
 		<table>
 			<tr><td>
 				<a href="http://www.eventbrite.ca/event/5645142774/eorg"><div><table><tr><td>Campus Tour<br />Dalhousie University<br />April 11</td></tr></table></div></a>
@@ -34,6 +36,7 @@ Are you going into your first year of University or College this fall? We would 
 				<a href="http://transitionmontreal.eventbrite.ca/"><div><table><tr><td>Transition Day<br />Montreal<br />April 27</td></tr></table></div></a>
 			</td></tr>
 		</table>
+		-->
 		</div>
 	</div>
 </div>
