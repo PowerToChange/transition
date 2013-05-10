@@ -23,9 +23,9 @@ Are you going into your first year of University or College this fall? We would 
 </div>
 <div id="campus_tours_list">
 	<div class="g3 center">
-		<h2><!--We will announce campus tours very soon, please come back later-->Sign up by clicking on the campus tour you want to attend.</h2>
+		<h2><!--We will announce campus tours very soon, please come back laterSign up by clicking on the campus tour you want to attend.-->No events scheduled right now.</h2>
 		<div class="miniwrapper">
-			No events scheduled right now.
+			
 			<!--
 		<table>
 			<tr><td>
