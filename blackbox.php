@@ -15,6 +15,7 @@
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch,CURLOPT_POST,count($params));
     curl_setopt($ch,CURLOPT_POSTFIELDS,$params);
+		var_dump(curl_getinfo($ch));
     $reply = curl_exec($ch);
     curl_close($ch);
 
