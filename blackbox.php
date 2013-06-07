@@ -32,6 +32,7 @@
         "pass" => PASSWORD
         );
       $return = http_call($loginData);
+			var_dump($return);
       $postData["PHPSESSID"] = $return["PHPSESSID"];
     }
   }
