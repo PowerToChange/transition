@@ -3,7 +3,7 @@
 
   $postData = array(
     "json" => "1",
-    "PHPSESSID" => "",
+//    "PHPSESSID" => "",
     "api_key" => "1",
     "key" => KEY,
   );
@@ -20,7 +20,7 @@
 
     return json_decode($reply, TRUE);
   }
-
+/*
   function login(){
     global $postData;
     if($postData["PHPSESSID"] == ""){
@@ -35,10 +35,10 @@
       $postData["PHPSESSID"] = $return["PHPSESSID"];
     }
   }
-
+*/
   function civicrm_call($entity, $action, $params){
     global $postData;
-    login();
+//    login();
 
     $addData = array(
       "entity" => $entity,
@@ -91,7 +91,7 @@
 
   function get_schools(){
     global $postData;
-    login();
+//    login();
     $schoolData = array(
       "entity" => "Contact",
       "action" => "get",
