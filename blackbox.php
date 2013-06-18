@@ -4,7 +4,7 @@
   $postData = array(
     "json" => "1",
 //    "PHPSESSID" => "",
-    "api_key" => "1",
+    "api_key" => API_KEY,
     "key" => KEY,
   );
 
