@@ -11,6 +11,8 @@
  
   function http_call($params){
     $ch = curl_init(RESTURL);
+//echo "http_call params:";
+//var_dump($params);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch,CURLOPT_POST,count($params));
@@ -20,7 +22,7 @@
 			var_dump(curl_error($ch));
 		}
     curl_close($ch);
-
+//var_dump($reply);
     return json_decode($reply, TRUE);
   }
 /*
@@ -94,6 +96,7 @@
 
   function get_schools(){
     global $postData;
+		$return = NULL;
 //    login();
     $schoolData = array(
       "entity" => "Contact",
@@ -105,8 +108,11 @@
 
     $allParams = array_merge($postData, $schoolData);
     $reply = http_call($allParams);
-    $return = $reply["values"];
-    usort($return, "sortByOrg");
+		if(key_exists('values', $reply))
+		{
+	    $return = $reply["values"];
+	    usort($return, "sortByOrg");			
+		}
     return $return;
   }
 
