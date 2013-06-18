@@ -15,7 +15,10 @@
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch,CURLOPT_POST,count($params));
     curl_setopt($ch,CURLOPT_POSTFIELDS,$params);
-    $reply = curl_exec($ch);
+    if(! $reply = curl_exec($ch))
+		{
+			var_dump(curl_error($ch));
+		}
     curl_close($ch);
 
     return json_decode($reply, TRUE);
