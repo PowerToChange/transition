@@ -9,6 +9,6 @@ foreach ($reply as $school => $data) {
 }
 $select_campus .=  "</select>";
 
-file_put_contents('campus_dropdown.html', $select_campus);
+file_put_contents('campus_dropdown3.html', $select_campus);
 
 ?>
