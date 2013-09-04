@@ -3,7 +3,6 @@
 
   $postData = array(
     "json" => "1",
-//    "PHPSESSID" => "",
     "api_key" => API_KEY,
     "key" => KEY,
   );
@@ -11,8 +10,6 @@
  
   function http_call($params){
     $ch = curl_init(RESTURL);
-//echo "http_call params:";
-//var_dump($params);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch,CURLOPT_POST,count($params));
@@ -22,28 +19,11 @@
 			var_dump(curl_error($ch));
 		}
     curl_close($ch);
-//var_dump($reply);
     return json_decode($reply, TRUE);
   }
-/*
-  function login(){
-    global $postData;
-    if($postData["PHPSESSID"] == ""){
-      $loginData = array(
-        "q" => "civicrm/login",
-        "key" => KEY,
-        "json" => "1",
-        "name" => USERNAME,
-        "pass" => PASSWORD
-        );
-      $return = http_call($loginData);
-      $postData["PHPSESSID"] = $return["PHPSESSID"];
-    }
-  }
-*/
+
   function civicrm_call($entity, $action, $params){
     global $postData;
-//    login();
 
     $addData = array(
       "entity" => $entity,
@@ -97,7 +77,6 @@
   function get_schools(){
     global $postData;
 		$return = NULL;
-//    login();
     $schoolData = array(
       "entity" => "Contact",
       "action" => "get",
@@ -134,7 +113,7 @@
     civicrm_call("Phone", "create", $phoneParams);
 
     $schoolParams = array(
-      "relationship_type_id" => 12, // High School Student starting at
+      "relationship_type_id" => 10, // student currently attending
       "contact_id_a" => $id,
       "contact_id_b" => $params["School"]["contact_id_b"] 
       );
@@ -143,15 +122,17 @@
     $activityParams = array(
     		"source_contact_id" => 1,
     		"target_contact_id" => $id,
-    		"activity_type_id" => 44, // Transition Form
+    		"activity_type_id" => 32, // Transition Form
     		"subject" => 'Transition 2013',
-    		"status_id" => 2,
+    		"status_id" => 4,
+    		"priority_id" => 1,
+    		"campaign_id" => 10,
+    		"source_record_id" => 23,
     );
     civicrm_call("Activity", "create", $activityParams);
     
   }
 
 
-  //civicrm_call("Contact", "get", array("id" => "50000"));
 
 ?>
